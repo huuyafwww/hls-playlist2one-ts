@@ -1,0 +1,5 @@
+.vscode
+.DS_Store
+temp/
+*.ts
+*.m3u8
