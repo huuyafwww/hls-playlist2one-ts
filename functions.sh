@@ -5,15 +5,7 @@ exit_program(){
   exit 1;
 };
 
-temp_dir_exists(){
-  if [ -e "`pwd`/temp" ]; then
-    return 1
-  else
-    return 0
-  fi
-};
-
-file_exists(){
+file_or_folder_exists(){
   if [ -e "${1}" ]; then
     return 1
   else

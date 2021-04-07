@@ -25,7 +25,7 @@ if [ -z ${output} ]; then
   output="`pwd`/temp"
 fi
 
-file_exists ${file}
+file_or_folder_exists ${file}
 
 if [ ${?} -eq 0 ]; then
   exit_program playlist_file_not_exists_message
@@ -37,7 +37,7 @@ if [ ${?} -eq 0 ]; then
   exit_program is_not_playlist_file_message
 fi
 
-temp_dir_exists
+file_or_folder_exists ${output}
 
 if [ ${?} -eq 0 ]; then
   mkdir ${output}
