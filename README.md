@@ -3,6 +3,7 @@
 ## Description
 
 You can get combined into one ts file by http live streaming playlist file!
+But, Not supported if authentication is required.
 
 ## Example
 
